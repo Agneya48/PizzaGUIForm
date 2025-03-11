@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="PizzaGUIFrame">
+  <grid id="27dc6" binding="marginPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="20" bottom="10" right="20"/>
+    <constraints>
+      <xy x="20" y="20" width="557" height="599"/>
+    </constraints>
+    <properties/>
+    <border type="none">
+      <font/>
+    </border>
+    <children>
+      <grid id="65b8d" binding="mainPanel" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="1" vgap="1">
+        <margin top="2" left="2" bottom="2" right="2"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="e9d9f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="28"/>
+              <text value="Pizza Order Form"/>
+            </properties>
+          </component>
+          <grid id="d3a9b" binding="pizzaOptionsPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="10" bottom="10" right="0"/>
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="87bd" binding="pizzaSizePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="10" bottom="5" right="10"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="20"/>
+                </properties>
+                <border type="none" title="Pizza Size" title-justification="2"/>
+                <children>
+                  <component id="855e3" class="javax.swing.JComboBox" binding="pizzaSize">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="Small"/>
+                        <item value="Medium"/>
+                        <item value="Large"/>
+                        <item value="Super"/>
+                      </model>
+                      <selectedIndex value="1"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="aa78c" binding="crustOptionsPanel" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="20" bottom="5" right="0"/>
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="20"/>
+                </properties>
+                <border type="none" title="Crust" title-justification="2"/>
+                <children>
+                  <component id="915dc" class="javax.swing.JRadioButton" binding="thinCrust">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <rolloverEnabled value="true"/>
+                      <text value="Thin"/>
+                    </properties>
+                  </component>
+                  <component id="e560a" class="javax.swing.JRadioButton" binding="regularCrust">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Regular"/>
+                    </properties>
+                  </component>
+                  <component id="70260" class="javax.swing.JRadioButton" binding="largeCrust">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Large"/>
+                    </properties>
+                  </component>
+                  <component id="54add" class="javax.swing.JRadioButton" binding="deepCrust">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Deep-dish"/>
+                    </properties>
+                  </component>
+                  <component id="e9bff" class="javax.swing.JRadioButton" binding="invisCrust">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="invisDefault"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="fe33f" binding="toppingsPanel" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="2" vgap="2">
+            <margin top="0" left="10" bottom="0" right="0"/>
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none" title="Toppings" title-justification="2"/>
+            <children>
+              <component id="777d" class="javax.swing.JCheckBox" binding="pepperoni">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Pepperoni"/>
+                </properties>
+              </component>
+              <component id="7a3aa" class="javax.swing.JCheckBox" binding="extraCheese">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Extra Cheese"/>
+                </properties>
+              </component>
+              <component id="7e3dc" class="javax.swing.JCheckBox" binding="sausage">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Sausage"/>
+                </properties>
+              </component>
+              <component id="176ad" class="javax.swing.JCheckBox" binding="bacon">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Bacon"/>
+                </properties>
+              </component>
+              <component id="be02" class="javax.swing.JCheckBox" binding="ham">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Ham"/>
+                </properties>
+              </component>
+              <component id="3de16" class="javax.swing.JCheckBox" binding="beef">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Beef"/>
+                </properties>
+              </component>
+              <component id="f1fcd" class="javax.swing.JCheckBox" binding="phillySteak">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Philly Steak"/>
+                </properties>
+              </component>
+              <component id="51493" class="javax.swing.JCheckBox" binding="pineapple">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Pineapple"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <hspacer id="1a0f">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="6e131">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <maximum-size width="600" height="-1"/>
+              </grid>
+            </constraints>
+          </hspacer>
+          <scrollpane id="5191a" binding="orderScroller">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none" title="Order Summary" title-justification="2">
+              <font size="20" style="1"/>
+              <title-color color="-14803426"/>
+            </border>
+            <children>
+              <component id="69447" class="javax.swing.JTextArea" binding="orderSummary">
+                <constraints/>
+                <properties>
+                  <columns value="40"/>
+                  <editable value="false"/>
+                  <lineWrap value="true"/>
+                  <margin top="10" left="20" bottom="10" right="10"/>
+                  <rows value="20"/>
+                  <text value=""/>
+                  <wrapStyleWord value="true"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <grid id="ef928" binding="buttonPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="20" left="10" bottom="20" right="10"/>
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="413f6" class="javax.swing.JButton" binding="orderButton">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="Button"/>
+                  <text value="Order"/>
+                </properties>
+              </component>
+              <component id="49087" class="javax.swing.JButton" binding="clearButton">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Clear"/>
+                </properties>
+              </component>
+              <component id="70d31" class="javax.swing.JButton" binding="quitButton">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Quit"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="crustGroup">
+      <member id="915dc"/>
+      <member id="e560a"/>
+      <member id="70260"/>
+      <member id="54add"/>
+      <member id="e9bff"/>
+    </group>
+  </buttonGroups>
+</form>
