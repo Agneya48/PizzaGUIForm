@@ -62,7 +62,6 @@ public class PizzaGUIFrame extends JFrame {
      * If no topping or crust, will instead show a message box asking the user to pick one of each
      */
     private void generateOrder() {
-        orderSummary.setText("Order Test");
 
         //checks if a crust was selected
         if (!(thinCrust.isSelected() || regularCrust.isSelected() ||
@@ -75,7 +74,7 @@ public class PizzaGUIFrame extends JFrame {
                 sausage.isSelected() || bacon.isSelected() ||
                 ham.isSelected() || pepperoni.isSelected() ||
                 phillySteak.isSelected() || pineapple.isSelected())) {
-            JOptionPane.showMessageDialog(orderSummary, "Please at least one topping");
+            JOptionPane.showMessageDialog(orderSummary, "Please select at least one topping");
             return;
         }
 
